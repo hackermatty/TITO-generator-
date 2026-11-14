@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView android:text="TITO BARCODE HACKER v1.0" android:textSize="28sp" android:textStyle="bold" android:gravity="center"/>
+    
+    <EditText android:id="@+id/venue_edit" android:hint="Venue Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/amount_edit" android:hint="Payout Amount ($)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/expire_edit" android:hint="Valid Until (DD/MM/YYYY)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    
+    <Button android:id="@+id/generate_button" android:text="GENERATE BARCODE" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    
+    <com.journeyapps.barcodescanner.BarcodeView android:id="@+id/barcode_view" android:layout_width="match_parent" android:layout_height="300dp"/>
+    
+    <TextView android:id="@+id/output_text" android:hint="Barcode preview + serial" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#f0f0f0"/>
+    
+    <Button android:id="@+id/print_button" android:text="PRINT TO PRINTER" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/connect_printer_button" android:text="CONNECT TITO PRINTER" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/scan_button" android:text="INSERT INTO MACHINE + CASH OUT" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ff0000"/>
+</LinearLayout>
